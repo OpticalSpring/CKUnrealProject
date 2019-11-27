@@ -35,7 +35,7 @@ public: \
 
 #define CKUE4_Source_CKUE4_AITankController_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AAITankController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API AAITankController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAITankController) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AAITankController); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITankController); \
@@ -47,8 +47,6 @@ public:
 
 
 #define CKUE4_Source_CKUE4_AITankController_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AAITankController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AAITankController(AAITankController&&); \
@@ -56,10 +54,14 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AAITankController); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AAITankController); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAITankController)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AAITankController)
 
 
-#define CKUE4_Source_CKUE4_AITankController_h_15_PRIVATE_PROPERTY_OFFSET
+#define CKUE4_Source_CKUE4_AITankController_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__BTAsset() { return STRUCT_OFFSET(AAITankController, BTAsset); } \
+	FORCEINLINE static uint32 __PPO__BBAsset() { return STRUCT_OFFSET(AAITankController, BBAsset); }
+
+
 #define CKUE4_Source_CKUE4_AITankController_h_12_PROLOG
 #define CKUE4_Source_CKUE4_AITankController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

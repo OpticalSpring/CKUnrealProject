@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeAITankController() {}
 	CKUE4_API UClass* Z_Construct_UClass_AAITankController();
 	AIMODULE_API UClass* Z_Construct_UClass_AAIController();
 	UPackage* Z_Construct_UPackage__Script_CKUE4();
+	AIMODULE_API UClass* Z_Construct_UClass_UBlackboardData_NoRegister();
+	AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
 // End Cross Module References
 	void AAITankController::StaticRegisterNativesAAITankController()
 	{
@@ -31,6 +33,15 @@ void EmptyLinkFunctionForGeneratedCodeAITankController() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BBAsset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BBAsset;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BTAsset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BTAsset;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +56,22 @@ void EmptyLinkFunctionForGeneratedCodeAITankController() {}
 		{ "ModuleRelativePath", "AITankController.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAITankController_Statics::NewProp_BBAsset_MetaData[] = {
+		{ "ModuleRelativePath", "AITankController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAITankController_Statics::NewProp_BBAsset = { "BBAsset", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAITankController, BBAsset), Z_Construct_UClass_UBlackboardData_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAITankController_Statics::NewProp_BBAsset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAITankController_Statics::NewProp_BBAsset_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAITankController_Statics::NewProp_BTAsset_MetaData[] = {
+		{ "ModuleRelativePath", "AITankController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAITankController_Statics::NewProp_BTAsset = { "BTAsset", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAITankController, BTAsset), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AAITankController_Statics::NewProp_BTAsset_MetaData, ARRAY_COUNT(Z_Construct_UClass_AAITankController_Statics::NewProp_BTAsset_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAITankController_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAITankController_Statics::NewProp_BBAsset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAITankController_Statics::NewProp_BTAsset,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAITankController_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAITankController>::IsAbstract,
 	};
@@ -54,11 +81,11 @@ void EmptyLinkFunctionForGeneratedCodeAITankController() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AAITankController_Statics::PropPointers,
 		nullptr,
 		ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		ARRAY_COUNT(Z_Construct_UClass_AAITankController_Statics::PropPointers),
 		0,
 		0x009002A0u,
 		METADATA_PARAMS(Z_Construct_UClass_AAITankController_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AAITankController_Statics::Class_MetaDataParams))
@@ -72,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeAITankController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAITankController, 806103895);
+	IMPLEMENT_CLASS(AAITankController, 3463870459);
 	template<> CKUE4_API UClass* StaticClass<AAITankController>()
 	{
 		return AAITankController::StaticClass();

@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "EngineMinimal.h"
 #include "AIController.h"
 #include "AITankController.generated.h"
 
@@ -14,4 +14,15 @@ class CKUE4_API AAITankController : public AAIController
 {
 	GENERATED_BODY()
 	
+	public:
+	AAITankController();
+	virtual void OnPossess(APawn* InPawn) override;
+	virtual void OnUnPossess() override;
+
+private:
+	UPROPERTY()
+	class UBehaviorTree* BTAsset;
+
+	UPROPERTY()
+	class UBlackboardData* BBAsset;
 };
