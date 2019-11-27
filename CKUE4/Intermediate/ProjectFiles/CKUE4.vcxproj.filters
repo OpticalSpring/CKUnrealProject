@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CKUE4.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2742B6F2-1DF8-457A-A488-0533DC259019}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CKUE4.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CKUE4Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{9FD22405-646F-406F-9335-59B5A491393B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CKUE4">
+      <UniqueIdentifier>{B7364689-81C1-4556-B153-4F43FDFB67B0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CKUE4\CKUE4.Build.cs">
+      <Filter>Source\CKUE4</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CKUE4\CKUE4.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\CKUE4.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\CKUE4GameModeBase.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\CKUE4GameModeBase.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

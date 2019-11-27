@@ -1,0 +1,3 @@
+C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4\CKUE4.Build.cs
+C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4.Target.cs
+C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4Editor.Target.cs
