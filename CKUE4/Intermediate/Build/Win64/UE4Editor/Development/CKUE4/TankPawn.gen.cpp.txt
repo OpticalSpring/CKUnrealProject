@@ -1,0 +1,5 @@
+C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4/TankPawn.h
+c:\users\now2_207_33\desktop\ckunrealproject\ckue4\intermediate\build\win64\ue4editor\inc\ckue4\TankPawn.generated.h

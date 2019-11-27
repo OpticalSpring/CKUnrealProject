@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CKUE4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2742B6F2-1DF8-457A-A488-0533DC259019}</UniqueIdentifier>
+      <UniqueIdentifier>{5374DE5E-E53D-4731-88CB-B97378303C84}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CKUE4.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9FD22405-646F-406F-9335-59B5A491393B}</UniqueIdentifier>
+      <UniqueIdentifier>{5172D0D5-61EB-4275-A75A-A5730204BA2C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,7 +24,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\CKUE4">
-      <UniqueIdentifier>{B7364689-81C1-4556-B153-4F43FDFB67B0}</UniqueIdentifier>
+      <UniqueIdentifier>{51C03507-53DE-4769-A46B-8090714F7C8D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CKUE4\CKUE4.Build.cs">
       <Filter>Source\CKUE4</Filter>
@@ -41,5 +41,33 @@
     <ClInclude Include="..\..\Source\CKUE4\CKUE4GameModeBase.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\PlayerTankController.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\PlayerTankController.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\TankCharacter.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\TankCharacter.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\TankGameMode.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\TankGameMode.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\CKUE4\AITankController.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\CKUE4\AITankController.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
