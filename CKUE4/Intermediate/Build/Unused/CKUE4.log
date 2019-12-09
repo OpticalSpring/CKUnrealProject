@@ -1,14 +1,6 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\NOW2_207_33\Desktop\CKUnrealProject).
   Parsing headers for CKUE4Editor
     Running UnrealHeaderTool "C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\CKUE4.uproject" "C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\CKUE4Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for CKUE4Editor in 5.2543652 seconds
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.16299.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 4 processes...
-    [1/4] AITankController.cpp
-    [2/4] UE4Editor-CKUE4-0034.lib
-       C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\UE4Editor-CKUE4-0034.lib 라이브러리 및 C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\UE4Editor-CKUE4-0034.exp 개체를 생성하고 있습니다.
-    [3/4] UE4Editor-CKUE4-0034.dll
-       C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\UE4Editor-CKUE4-0034.suppressed.lib 라이브러리 및 C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\UE4Editor-CKUE4-0034.suppressed.exp 개체를 생성하고 있습니다.
-    [4/4] CKUE4Editor.target
-  Total time in Parallel executor: 5.43 seconds
-  Total execution time: 11.51 seconds
+  Reflection code generated for CKUE4Editor in 4.9782571 seconds
+  Target is up to date
+  Total execution time: 5.57 seconds

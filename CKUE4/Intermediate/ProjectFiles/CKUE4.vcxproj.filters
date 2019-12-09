@@ -59,14 +59,39 @@
     <ClInclude Include="..\..\Source\CKUE4\TankGameMode.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\CKUE4\AITankController.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CKUE4\BTService_Detect.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CKUE4\BTTask_Attack.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\CKUE4\AITankController.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CKUE4\BTService_Detect.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CKUE4\BTTask_Attack.cpp">
       <Filter>Source\CKUE4</Filter>
     </ClCompile>
   </ItemGroup>
