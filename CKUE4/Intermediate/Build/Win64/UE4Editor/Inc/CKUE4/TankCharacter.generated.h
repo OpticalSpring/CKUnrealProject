@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define CKUE4_TankCharacter_generated_h
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_RPC_WRAPPERS
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_RPC_WRAPPERS
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATankCharacter(); \
 	friend struct Z_Construct_UClass_ATankCharacter_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(ATankCharacter)
 
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_INCLASS \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesATankCharacter(); \
 	friend struct Z_Construct_UClass_ATankCharacter_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ATankCharacter)
 
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_STANDARD_CONSTRUCTORS \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATankCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATankCharacter) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATankCharacter(ATankCharacter&&); \
@@ -57,26 +57,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATankCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATankCharacter)
 
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_PRIVATE_PROPERTY_OFFSET
-#define CKUE4_Source_CKUE4_TankCharacter_h_9_PROLOG
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_GENERATED_BODY_LEGACY \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_PRIVATE_PROPERTY_OFFSET
+#define CKUE4_Source_CKUE4_TankCharacter_h_11_PROLOG
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_RPC_WRAPPERS \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_INCLASS \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_STANDARD_CONSTRUCTORS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_RPC_WRAPPERS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_INCLASS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define CKUE4_Source_CKUE4_TankCharacter_h_12_GENERATED_BODY \
+#define CKUE4_Source_CKUE4_TankCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	CKUE4_Source_CKUE4_TankCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	CKUE4_Source_CKUE4_TankCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

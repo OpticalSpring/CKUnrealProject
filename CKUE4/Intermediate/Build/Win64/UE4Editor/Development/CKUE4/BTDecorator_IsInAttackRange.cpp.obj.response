@@ -426,21 +426,21 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Inc\CKUE4
-/I C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source
-/I C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4
+/I D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Inc\CKUE4
+/I D:\UnrealEngine\CKUnrealProject\CKUE4\Source
+/I D:\UnrealEngine\CKUnrealProject\CKUE4\Source\CKUE4
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Source\CKUE4\BTDecorator_IsInAttackRange.cpp"
-/FI"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h"
-/Fo"C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\BTDecorator_IsInAttackRange.cpp.obj"
+/FI"D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\CKUE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\UnrealEngine\CKUnrealProject\CKUE4\Source\CKUE4\BTDecorator_IsInAttackRange.cpp"
+/FI"D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h"
+/Fo"D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\BTDecorator_IsInAttackRange.cpp.obj"
 /TP
 /GR-
 /W4

@@ -1,2 +1,2 @@
-C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h
-c:\users\now2_207_33\desktop\ckunrealproject\ckue4\source\ckue4\CKUE4.h
+D:\UnrealEngine\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h
+d:\unrealengine\ckunrealproject\ckue4\source\ckue4\CKUE4.h

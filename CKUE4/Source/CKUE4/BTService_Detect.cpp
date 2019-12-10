@@ -35,7 +35,7 @@ void UBTService_Detect::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * Nod
 		FCollisionShape::MakeSphere(DetectRadius),
 		CollisionQueryParam
 	);
-
+	OwnerComp.GetBlackboardComponent()->SetValueAsObject(FName(TEXT("Target")), nullptr);
 	if (bResult) {
 		for (auto const& OverlapResult : OverlapResults)
 		{
@@ -43,6 +43,7 @@ void UBTService_Detect::TickNode(UBehaviorTreeComponent & OwnerComp, uint8 * Nod
 			if (ABCharacter && ABCharacter->GetController()->IsPlayerController())
 			{
 				OwnerComp.GetBlackboardComponent()->SetValueAsObject(FName(TEXT("Target")), ABCharacter);
+				OwnerComp.GetBlackboardComponent()->SetValueAsFloat(FName(TEXT("HPValue")), ABCharacter->HP_NOW);
 				DrawDebugSphere(World, Center, DetectRadius, 16, FColor::Green, false, 0.2f);
 				return;
 			}

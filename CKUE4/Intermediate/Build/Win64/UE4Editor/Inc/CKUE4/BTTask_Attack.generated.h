@@ -35,7 +35,7 @@ public: \
 
 #define CKUE4_Source_CKUE4_BTTask_Attack_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UBTTask_Attack(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+	NO_API UBTTask_Attack(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTask_Attack) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBTTask_Attack); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTTask_Attack); \
@@ -47,8 +47,6 @@ public:
 
 
 #define CKUE4_Source_CKUE4_BTTask_Attack_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UBTTask_Attack(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UBTTask_Attack(UBTTask_Attack&&); \
@@ -56,7 +54,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UBTTask_Attack); \
 DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBTTask_Attack); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBTTask_Attack)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UBTTask_Attack)
 
 
 #define CKUE4_Source_CKUE4_BTTask_Attack_h_15_PRIVATE_PROPERTY_OFFSET

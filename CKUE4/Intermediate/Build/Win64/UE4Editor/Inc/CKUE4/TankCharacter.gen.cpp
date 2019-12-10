@@ -35,6 +35,14 @@ void EmptyLinkFunctionForGeneratedCodeTankCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HP_NOW_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HP_NOW;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HP_MAX_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_HP_MAX;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Camera_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Camera;
@@ -73,6 +81,22 @@ void EmptyLinkFunctionForGeneratedCodeTankCharacter() {}
 		{ "ModuleRelativePath", "TankCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_NOW_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Stat" },
+		{ "ModuleRelativePath", "TankCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_NOW = { "HP_NOW", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATankCharacter, HP_NOW), METADATA_PARAMS(Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_NOW_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_NOW_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_MAX_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Stat" },
+		{ "ModuleRelativePath", "TankCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_MAX = { "HP_MAX", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATankCharacter, HP_MAX), METADATA_PARAMS(Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_MAX_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_MAX_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATankCharacter_Statics::NewProp_Camera_MetaData[] = {
 		{ "Category", "Camera" },
@@ -122,6 +146,8 @@ void EmptyLinkFunctionForGeneratedCodeTankCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATankCharacter_Statics::NewProp_Body = { "Body", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATankCharacter, Body), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATankCharacter_Statics::NewProp_Body_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATankCharacter_Statics::NewProp_Body_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATankCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_NOW,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankCharacter_Statics::NewProp_HP_MAX,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankCharacter_Statics::NewProp_Camera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankCharacter_Statics::NewProp_SpringArm,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankCharacter_Statics::NewProp_Turret,
@@ -156,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeTankCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATankCharacter, 2098016600);
+	IMPLEMENT_CLASS(ATankCharacter, 3791999924);
 	template<> CKUE4_API UClass* StaticClass<ATankCharacter>()
 	{
 		return ATankCharacter::StaticClass();

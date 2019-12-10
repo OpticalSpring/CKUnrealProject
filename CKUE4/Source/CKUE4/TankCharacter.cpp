@@ -3,14 +3,15 @@
 
 #include "TankCharacter.h"
 #include "AITankController.h"
+#include "TankAP.h"
 
 // Sets default values
 ATankCharacter::ATankCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-
+	GetCapsuleComponent()->SetGenerateOverlapEvents(true);
 	//---------------------------------------------컴포넌트 구성
 	Body = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BODY"));
 	LeftWheel = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("LEFTWHEEL"));
@@ -18,7 +19,6 @@ ATankCharacter::ATankCharacter()
 	Turret = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("TURRET"));
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SPRINGARM"));
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("CAMERA"));
-
 
 	//---------------------------------------------부모 정의
 	SpringArm->SetupAttachment(GetCapsuleComponent());
@@ -46,8 +46,9 @@ ATankCharacter::ATankCharacter()
 	if (TURRET_MESH.Succeeded()) {
 		Turret->SetStaticMesh(TURRET_MESH.Object);
 	}
+	
 	//---------------------------------------------카메라 세팅
-	SpringArm->TargetArmLength = 2000.0f;
+	SpringArm->TargetArmLength = 3000.0f;
 	SpringArm->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
 	SpringArm->bUsePawnControlRotation = false;
 	SpringArm->bInheritPitch = false;
@@ -63,17 +64,19 @@ ATankCharacter::ATankCharacter()
 	GetCharacterMovement()->GroundFriction = 2.0f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 100.0f;
 
-	 
+
 	//-------------------------------------------AI 세팅
 	AIControllerClass = AAITankController::StaticClass();
 	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+	
+	HP_MAX = 10;
+	HP_NOW = HP_MAX;
 }
 
 // Called when the game starts or when spawned
 void ATankCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -94,6 +97,26 @@ void ATankCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis(TEXT("UpDown"), this, &ATankCharacter::UpDown);
 	PlayerInputComponent->BindAxis(TEXT("LeftRight"), this, &ATankCharacter::LeftRight);
+	PlayerInputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ATankCharacter::Fire);
+}
+
+float ATankCharacter::TakeDamage(float DamageAmount, FDamageEvent const & DamageEvent, AController * EventInstigator, AActor * DamageCauser)
+{
+	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	if (EventInstigator != GetController()) {
+		HP_NOW -= FinalDamage; 
+		UE_LOG(LogTemp, Log, TEXT("dif"));
+	}
+	else {
+		UE_LOG(LogTemp, Log, TEXT("sam"));
+	}
+	return FinalDamage;
+}
+
+void ATankCharacter::Attack()
+{
+	Fire();
+	OnAttackEnd.Broadcast();
 }
 
 void ATankCharacter::UpDown(float NewAxisValue)
@@ -104,5 +127,12 @@ void ATankCharacter::UpDown(float NewAxisValue)
 void ATankCharacter::LeftRight(float NewAxisValue)
 {
 	DirectionToMove.Y = NewAxisValue;
+}
+
+void ATankCharacter::Fire()
+{
+	UE_LOG(LogTemp, Log, TEXT("Fire"));
+	auto AP = GetWorld()->SpawnActor<ATankAP>(GetTransform().GetLocation() + GetActorForwardVector() * 200, (FRotator)GetTransform().GetRotation());
+	//AP->con = GetController();
 }
 

@@ -1,3 +1,0 @@
-C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Development\CKUE4\Definitions.CKUE4.h
-c:\users\now2_207_33\desktop\ckunrealproject\ckue4\source\ckue4\TankPawn.h
-C:\Users\NOW2_207_33\Desktop\CKUnrealProject\CKUE4\Intermediate\Build\Win64\UE4Editor\Inc\CKUE4\TankPawn.generated.h

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\CKUE4.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5374DE5E-E53D-4731-88CB-B97378303C84}</UniqueIdentifier>
+      <UniqueIdentifier>{F3E4C7EB-D2D6-48CF-BE30-C9CD0910189D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\CKUE4.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{5172D0D5-61EB-4275-A75A-A5730204BA2C}</UniqueIdentifier>
+      <UniqueIdentifier>{765A2687-DBC7-471E-9F73-728B78F4636C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,9 +23,42 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\CKUE4">
-      <UniqueIdentifier>{51C03507-53DE-4769-A46B-8090714F7C8D}</UniqueIdentifier>
+      <UniqueIdentifier>{DEAA7C59-29B3-4993-8808-87BA9EA439F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CKUE4\AITankController.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\AITankController.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\BTService_Detect.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\BTService_Detect.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\BTTask_Attack.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\BTTask_Attack.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.cpp">
+      <Filter>Source\CKUE4</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.h">
+      <Filter>Source\CKUE4</Filter>
+    </ClInclude>
     <None Include="..\..\Source\CKUE4\CKUE4.Build.cs">
       <Filter>Source\CKUE4</Filter>
     </None>
@@ -59,39 +92,26 @@
     <ClInclude Include="..\..\Source\CKUE4\TankGameMode.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\CKUE4\AITankController.h">
+    <ClInclude Include="..\..\Source\CKUE4\TankAP.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.h">
+    <ClInclude Include="..\..\Source\CKUE4\TankWidget.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\CKUE4\BTService_Detect.h">
-      <Filter>Source\CKUE4</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.h">
-      <Filter>Source\CKUE4</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\CKUE4\BTTask_Attack.h">
+    <ClInclude Include="..\..\Source\CKUE4\BTTask_TurnToTarget.h">
       <Filter>Source\CKUE4</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\CKUE4\AITankController.cpp">
+    <ClCompile Include="..\..\Source\CKUE4\TankAP.cpp">
       <Filter>Source\CKUE4</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\CKUE4\BTTask_FindPatrolPos.cpp">
+    <ClCompile Include="..\..\Source\CKUE4\TankWidget.cpp">
       <Filter>Source\CKUE4</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\CKUE4\BTService_Detect.cpp">
-      <Filter>Source\CKUE4</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CKUE4\BTDecorator_IsInAttackRange.cpp">
-      <Filter>Source\CKUE4</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\CKUE4\BTTask_Attack.cpp">
+    <ClCompile Include="..\..\Source\CKUE4\BTTask_TurnToTarget.cpp">
       <Filter>Source\CKUE4</Filter>
     </ClCompile>
   </ItemGroup>

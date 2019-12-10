@@ -9,6 +9,7 @@
 const FName AAITankController::HomePosKey(TEXT("HomePos"));
 const FName AAITankController::PatrolPosKey(TEXT("PatrolPos"));
 const FName AAITankController::TargetKey(TEXT("Target"));
+const FName AAITankController::HPValueKey(TEXT("HPValue"));
 
 AAITankController::AAITankController()
 {
